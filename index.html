@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excursão Tóquio | Escola Kikugawa</title>
+    <meta name="description" content="Guia de viagem escolar para Tóquio">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF9800">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-decor"></div>
+
+    <header class="glass-header">
+        <h1>Excursão Tóquio 🇯🇵</h1>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active fade-in">
+            <div class="glass-card hero-card">
+                <div class="hero-image-container">
+                    <img src="hero.png" alt="Ônibus escolar com Tóquio ao fundo" class="hero-image">
+                    <div class="hero-overlay">
+                        <h2>Vamos para Tóquio!</h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="intro-text">Olá, aventureiros! 🎒 Preparem-se para uma viagem inesquecível de Kikugawa até
+                        a grande metrópole de Tóquio. Vamos descobrir templos antigos, robôs, arranha-céus e muito mais!
+                    </p>
+                    <button class="next-btn ripple" data-next="segunda">
+                        Ver Nossa Jornada <span class="material-icons-round">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segunda-feira -->
+        <section id="segunda">
+            <div class="day-header">
+                <h2>Segunda-feira</h2>
+                <div class="subtitle">Tecnologia & Pokémon</div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon bg-electric">
+                        <span class="material-icons-round">bolt</span>
+                    </div>
+                    <div class="glass-card" data-id="akihabara">
+                        <img src="https://loremflickr.com/800/400/akihabara,anime" alt="Akihabara" class="card-img">
+                        <div class="card-content">
+                            <h3>Manhã: Akihabara</h3>
+                            <p>O centro mundial dos Animes e Games! 🎮 Fiquem de olhos bem abertos para ver os prédios
+                                coloridos e as lojas gigantes de eletrônicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-100">
+                    <div class="timeline-icon bg-fire">
+                        <span class="material-icons-round">catching_pokemon</span>
+                    </div>
+                    <div class="glass-card" data-id="pokemon">
+                        <img src="https://loremflickr.com/800/400/pokemon,store" alt="Pokémon Center" class="card-img">
+                        <div class="card-content">
+                            <h3>Tarde: Pokémon Center DX</h3>
+                            <p>Temos que pegar! Vamos visitar a loja oficial e talvez encontrar um Pikachu gigante para
+                                tirar fotos. ⚡</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn ripple scroll-reveal delay-200" data-next="terca">Dia Seguinte: Terça <span
+                    class="material-icons-round">arrow_forward</span></button>
+        </section>
+
+        <!-- Terça-feira -->
+        <section id="terca">
+            <div class="day-header">
+                <h2>Terça-feira</h2>
+                <div class="subtitle">Tradição & Cultura</div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon bg-red">
+                        <span class="material-icons-round">temple_buddhist</span>
+                    </div>
+                    <div class="glass-card" data-id="asakusa">
+                        <img src="https://loremflickr.com/800/400/sensoji,temple" alt="Templo Senso-ji"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Manhã: Asakusa</h3>
+                            <p>Viajem no tempo no templo mais antigo de Tóquio! Procurem a lanterna gigante vermelha no
+                                portão Kaminarimon: ela pesa 700kg! 🏮</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-100">
+                    <div class="timeline-icon bg-green">
+                        <span class="material-icons-round">museum</span>
+                    </div>
+                    <div class="glass-card" data-id="ueno">
+                        <img src="https://loremflickr.com/800/400/ueno,park" alt="Parque Ueno" class="card-img">
+                        <div class="card-content">
+                            <h3>Tarde: Parque Ueno</h3>
+                            <p>Cultura e natureza juntas. Vamos caminhar pelo parque famoso e visitar museus incríveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-200">
+                    <div class="timeline-icon bg-orange">
+                        <span class="material-icons-round">restaurant</span>
+                    </div>
+                    <div class="glass-card" data-id="hanamai">
+                        <img src="https://loremflickr.com/800/400/sumo,japan" alt="Jantar Temático" class="card-img">
+                        <div class="card-content">
+                            <h3>Jantar: Hana no Mai</h3>
+                            <p>Uma experiência da era dos Samurais! O restaurante tem até um ringue de Sumô no meio.
+                                🍜🥋</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn ripple scroll-reveal delay-200" data-next="quarta">Dia Seguinte: Quarta <span
+                    class="material-icons-round">arrow_forward</span></button>
+        </section>
+
+        <!-- Quarta-feira -->
+        <section id="quarta">
+            <div class="day-header">
+                <h2>Quarta-feira</h2>
+                <div class="subtitle">Ícones da Cidade</div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon bg-gold">
+                        <span class="material-icons-round">account_balance</span>
+                    </div>
+                    <div class="glass-card" data-id="imperial">
+                        <img src="https://loremflickr.com/800/400/imperial,palace,tokyo" alt="Palácio Imperial"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Manhã: Palácio Imperial</h3>
+                            <p>A casa do Imperador! 👑 Vamos ver as muralhas de pedra e as fossas de água que protegiam
+                                o castelo antigamente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-100">
+                    <div class="timeline-icon bg-red">
+                        <span class="material-icons-round">tower</span>
+                    </div>
+                    <div class="glass-card" data-id="tower">
+                        <img src="https://loremflickr.com/800/400/tokyo,tower" alt="Tokyo Tower" class="card-img">
+                        <div class="card-content">
+                            <h3>Meio-dia: Tokyo Tower</h3>
+                            <p>Parece a Torre Eiffel, mas é vermelha e branca! Vamos subir e ver a cidade lá do alto. 🗼
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-200">
+                    <div class="timeline-icon bg-blue">
+                        <span class="material-icons-round">directions_walk</span>
+                    </div>
+                    <div class="glass-card" data-id="shibuya">
+                        <img src="https://loremflickr.com/800/400/shibuya,crossing" alt="Shibuya Crossing"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Tarde: Shibuya Crossing</h3>
+                            <p>O cruzamento mais louco do mundo! 🚶‍♂️🚶‍♀️ Milhares de pessoas atravessam ao mesmo
+                                tempo. Vamos nos misturar na multidão!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-200">
+                    <div class="timeline-icon bg-sky">
+                        <span class="material-icons-round">cloud</span>
+                    </div>
+                    <div class="glass-card" data-id="skytree">
+                        <img src="https://loremflickr.com/800/400/skytree,tokyo" alt="Tokyo Skytree" class="card-img">
+                        <div class="card-content">
+                            <h3>Fim de Tarde: Skytree</h3>
+                            <p>A torre mais alta do Japão tocando as nuvens! A vista do pôr do sol aqui será mágica. ☁️
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-200">
+                    <div class="timeline-icon bg-purple">
+                        <span class="material-icons-round">star</span>
+                    </div>
+                    <div class="glass-card" data-id="xmas">
+                        <img src="https://loremflickr.com/800/400/christmas,lights" alt="Iluminação de Natal"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Jantar: Praça da Skytree</h3>
+                            <p>Um jantar especial sob as luzes brilhantes da cidade. ✨</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn ripple scroll-reveal delay-200" data-next="quinta">Dia Seguinte: Quinta <span
+                    class="material-icons-round">arrow_forward</span></button>
+        </section>
+
+        <!-- Quinta-feira -->
+        <section id="quinta">
+            <div class="day-header">
+                <h2>Quinta-feira</h2>
+                <div class="subtitle">História & Retorno</div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon bg-red">
+                        <span class="material-icons-round">storefront</span>
+                    </div>
+                    <div class="glass-card" data-id="chinatown">
+                        <img src="https://loremflickr.com/800/400/chinatown,yokohama" alt="Yokohama Chinatown"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Manhã: Yokohama Chinatown</h3>
+                            <p>Cores, cheiros e sabores! A maior Chinatown do Japão é vibrante e cheia de coisas legais
+                                para ver. 🥟</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-100">
+                    <div class="timeline-icon bg-blue">
+                        <span class="material-icons-round">flight_takeoff</span>
+                    </div>
+                    <div class="glass-card" data-id="jica">
+                        <img src="https://loremflickr.com/800/400/museum,history" alt="Museu da Imigração"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Tarde: Museu da JICA</h3>
+                            <p>Um mergulho na história. Vamos entender como muitos brasileiros vieram para o Japão e
+                                vice-versa. 🇧🇷🇯🇵</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-200">
+                    <div class="timeline-icon bg-green">
+                        <span class="material-icons-round">home</span>
+                    </div>
+                    <div class="glass-card" data-id="retorno">
+                        <img src="https://loremflickr.com/800/400/school,bus,japan" alt="Volta para casa"
+                            class="card-img">
+                        <div class="card-content">
+                            <h3>Retorno</h3>
+                            <p>Hora de voltar para Kikugawa com a mala cheia de lembranças e histórias para contar! 🚌💨
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn ripple scroll-reveal delay-200" data-next="home">Voltar ao Início <span
+                    class="material-icons-round">replay</span></button>
+        </section>
+    </main>
+
+    <div class="fab-container">
+        <button class="fab ripple" aria-label="Emergência e Mapa">
+            <span class="material-icons-round">support_agent</span>
+        </button>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-item active ripple" data-target="home">
+            <span class="material-icons-round">home</span>
+            <span class="nav-label">Início</span>
+        </div>
+        <div class="nav-item ripple" data-target="segunda">
+            <span class="material-icons-round">looks_one</span>
+            <span class="nav-label">Seg</span>
+        </div>
+        <div class="nav-item ripple" data-target="terca">
+            <span class="material-icons-round">looks_two</span>
+            <span class="nav-label">Ter</span>
+        </div>
+        <div class="nav-item ripple" data-target="quarta">
+            <span class="material-icons-round">looks_3</span>
+            <span class="nav-label">Qua</span>
+        </div>
+        <div class="nav-item ripple" data-target="quinta">
+            <span class="material-icons-round">looks_4</span>
+            <span class="nav-label">Qui</span>
+        </div>
+    </nav>
+
+    <!-- Modal Structure -->
+    <div id="detail-modal" class="modal-overlay">
+        <div class="modal-container glass-card">
+            <button class="close-btn" aria-label="Fechar">&times;</button>
+            <div class="modal-carousel" id="modal-carousel">
+                <!-- Images injected here -->
+            </div>
+            <div class="modal-content-scroll">
+                <div class="modal-header">
+                    <h2 id="modal-title">Título do Local</h2>
+                </div>
+                <div class="modal-body" id="modal-description">
+                    <!-- Text injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Modal Structure -->
+    <div id="emergency-modal" class="modal-overlay">
+        <div class="modal-container glass-card" style="height: auto; max-height: 80vh;">
+            <button class="close-btn" aria-label="Fechar">&times;</button>
+            <div class="modal-content-scroll">
+                <div class="modal-header">
+                    <h2 style="color: #D32F2F;">🚨 Emergência</h2>
+                </div>
+                <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <p>Clique para ligar:</p>
+
+                    <a href="tel:08062862021" class="contact-btn ripple">
+                        <span class="material-icons-round">face</span>
+                        <div class="contact-info">
+                            <span class="contact-name">Diretora Márcia</span>
+                            <span class="contact-number">080-6286-2021</span>
+                        </div>
+                        <span class="material-icons-round">phone</span>
+                    </a>
+
+                    <a href="tel:08069563763" class="contact-btn ripple">
+                        <span class="material-icons-round">school</span>
+                        <div class="contact-info">
+                            <span class="contact-name">Prof. Nathan</span>
+                            <span class="contact-number">080-6956-3763</span>
+                        </div>
+                        <span class="material-icons-round">phone</span>
+                    </a>
+
+                    <a href="tel:09012943984" class="contact-btn ripple">
+                        <span class="material-icons-round">directions_bus</span>
+                        <div class="contact-info">
+                            <span class="contact-name">Motorista (Toshio)</span>
+                            <span class="contact-number">090-1294-3984</span>
+                        </div>
+                        <span class="material-icons-round">phone</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

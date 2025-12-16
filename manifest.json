@@ -1,0 +1,16 @@
+{
+  "name": "Excursão Tóquio",
+  "short_name": "ExcursãoTok",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FFC107",
+  "description": "Excursão Escolar de Kikugawa para Tóquio",
+  "icons": [
+    {
+      "src": "hero.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
