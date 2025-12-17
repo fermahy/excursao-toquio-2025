@@ -124,21 +124,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Populate Carousel
         modalCarousel.innerHTML = '';
-        data.keywords.forEach((keyword, index) => {
+        for (let i = 1; i <= 4; i++) {
             const slide = document.createElement('div');
             slide.className = 'carousel-slide';
             const img = document.createElement('img');
-            // Adding index to ensure distinct requests if keywords repeat or browser caching
-            img.src = `https://loremflickr.com/800/600/${keyword}?random=${index}`;
-            img.alt = `${data.title} - ${keyword}`;
+            img.src = `images/${id}-${i}.jpg`;
+            img.alt = `${data.title} - Foto ${i}`;
             img.loading = 'lazy';
             slide.appendChild(img);
             modalCarousel.appendChild(slide);
-        });
+        }
 
         // Show Modal
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    // Carousel Navigation
+    const prevBtn = modal.querySelector('.c-prev');
+    const nextBtn = modal.querySelector('.c-next');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (modalCarousel.scrollLeft <= 10) {
+                modalCarousel.scrollTo({ left: modalCarousel.scrollWidth, behavior: 'smooth' });
+            } else {
+                modalCarousel.scrollBy({ left: -modalCarousel.offsetWidth, behavior: 'smooth' });
+            }
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const maxScroll = modalCarousel.scrollWidth - modalCarousel.clientWidth;
+            if (modalCarousel.scrollLeft >= maxScroll - 10) {
+                modalCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                modalCarousel.scrollBy({ left: modalCarousel.offsetWidth, behavior: 'smooth' });
+            }
+        });
     }
 
     function closeModal() {
