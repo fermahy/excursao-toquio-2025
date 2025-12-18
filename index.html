@@ -27,27 +27,35 @@
     <div class="background-decor"></div>
 
     <header class="glass-header">
-        <h1>Excursão CESC Kikugawa 2025 <img src="images/logo-school.png" alt="Logo Escola" class="header-logo"></h1>
+        <h1>
+            <img src="images/logo-school.png" alt="Logo Escola" class="header-logo">
+            <span class="header-title-block">
+                <span class="title-top">Passeio para Tóquio</span>
+                <span class="title-bottom">CESC Kikugawa 2025</span>
+            </span>
+        </h1>
     </header>
 
     <main>
         <!-- Home Section -->
         <section id="home" class="active fade-in">
-            <div class="glass-card hero-card">
-                <div class="hero-image-container">
-                    <img src="hero.png" alt="Ônibus escolar com Tóquio ao fundo" class="hero-image">
-                    <div class="hero-overlay">
-                        <h2>Vamos para Tóquio!</h2>
-                    </div>
-                </div>
-                <div class="content">
-                    <p class="intro-text">Olá, aventureiros! 🎒 Preparem-se para uma viagem inesquecível de Kikugawa até
-                        a grande metrópole de Tóquio. Vamos descobrir templos antigos, robôs, arranha-céus e muito mais!
-                    </p>
-                    <button class="next-btn ripple" data-next="segunda">
-                        Ver Nossa Jornada <span class="material-icons-round">arrow_forward</span>
-                    </button>
-                </div>
+            <!-- Camada 1: Video Background -->
+            <video class="bg-video" autoplay muted loop playsinline>
+                <source src="images/computador.mp4" media="(min-width: 768px)">
+                <source src="images/celular.mp4">
+            </video>
+
+            <!-- Camada 2: Overlay Content -->
+            <div class="home-overlay">
+                <h2>Explorando História e Modernidade</h2>
+                <p class="intro-text">
+                    Vamos conhecer o coração do Japão, lar do cruzamento mais movimentado do planeta e da estrutura mais
+                    alta do país. Uma oportunidade única de vivenciar a história e a tecnologia, unindo cultura e
+                    inovação para criar memórias incríveis.
+                </p>
+                <button class="next-btn ripple" data-next="segunda">
+                    Ver Nossa Jornada <span class="material-icons-round">arrow_forward</span>
+                </button>
             </div>
         </section>
 
@@ -68,9 +76,10 @@
                     <div class="glass-card" data-id="akihabara">
                         <img src="images/akihabara-cover.jpg" alt="Akihabara" class="card-img">
                         <div class="card-content">
-                            <h3>Manhã: Akihabara</h3>
-                            <p>O centro mundial dos Animes e Games! 🎮 Fiquem de olhos bem abertos para ver os prédios
-                                coloridos e as lojas gigantes de eletrônicos.</p>
+                            <h3>Akihabara</h3>
+                            <p>É o vibrante coração da cultura otaku e tecnológica de Tóquio onde arranha-céus cobertos
+                                por luzes de neon abrigam desde gigantescas lojas de eletrônicos até paraísos de
+                                colecionadores.</p>
                         </div>
                     </div>
                 </div>
@@ -82,9 +91,10 @@
                     <div class="glass-card" data-id="pokemon">
                         <img src="images/pokemon-cover.jpg" alt="Pokémon Center" class="card-img">
                         <div class="card-content">
-                            <h3>Tarde: Pokémon Center DX</h3>
-                            <p>Temos que pegar! Vamos visitar a loja oficial e talvez encontrar um Pikachu gigante para
-                                tirar fotos. ⚡</p>
+                            <h3>Pokémon Center DX</h3>
+                            <p>Muito mais que uma loja, uma experiência Deluxe. Diferente das outras unidades, esta
+                                abriga o primeiro Pokémon Café do Japão e oferece linhas de pelúcias exclusivas
+                                "Nihonbashi" que você não encontra em nenhum outro lugar do mundo.</p>
                         </div>
                     </div>
                 </div>
@@ -109,11 +119,12 @@
                         <span class="material-icons-round">temple_buddhist</span>
                     </div>
                     <div class="glass-card" data-id="asakusa">
-                        <img src="images/asakusa-cover.jpg" alt="Templo Senso-ji" class="card-img">
+                        <img src="images/asakusa-cover.jpg" alt="Asakusa" class="card-img">
                         <div class="card-content">
-                            <h3>Manhã: Asakusa</h3>
-                            <p>Viajem no tempo no templo mais antigo de Tóquio! Procurem a lanterna gigante vermelha no
-                                portão Kaminarimon: ela pesa 700kg! 🏮</p>
+                            <h3>Asakusa</h3>
+                            <p>Bairro tradicional da capital. Aqui visitaremos o Senso-ji, o templo mais antigo de
+                                Tóquio, e atravessaremos o imponente Portão Kaminarimon com sua famosa lanterna gigante.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -125,9 +136,10 @@
                     <div class="glass-card" data-id="ueno">
                         <img src="images/ueno-cover.jpg" alt="Parque Ueno" class="card-img">
                         <div class="card-content">
-                            <h3>Tarde: Parque Ueno</h3>
-                            <p>Cultura e natureza juntas. Vamos caminhar pelo parque famoso e visitar museus incríveis.
-                            </p>
+                            <h3>Museus</h3>
+                            <p>Conhecido como a "Floresta da Cultura", o Parque Ueno abriga os museus mais importantes
+                                do país. Uma oportunidade incrível de explorar coleções que vão da história antiga à
+                                ciência natural.</p>
                         </div>
                     </div>
                 </div>
@@ -139,9 +151,9 @@
                     <div class="glass-card" data-id="hanamai">
                         <img src="images/hanamai-cover.jpg" alt="Jantar Temático" class="card-img">
                         <div class="card-content">
-                            <h3>Jantar: Hana no Mai</h3>
-                            <p>Uma experiência da era dos Samurais! O restaurante tem até um ringue de Sumô no meio.
-                                🍜🥋</p>
+                            <h3>Hana no Mai</h3>
+                            <p>Viaje no tempo para a Era Edo. Um restaurante temático espetacular construído ao redor de
+                                um autêntico ringue de Sumô, onde a gastronomia encontra a tradição dos samurais.</p>
                         </div>
                     </div>
                 </div>
@@ -168,9 +180,9 @@
                     <div class="glass-card" data-id="imperial">
                         <img src="images/imperial-cover.jpg" alt="Palácio Imperial" class="card-img">
                         <div class="card-content">
-                            <h3>Manhã: Palácio Imperial</h3>
-                            <p>A casa do Imperador! 👑 Vamos ver as muralhas de pedra e as fossas de água que protegiam
-                                o castelo antigamente.</p>
+                            <h3>Palácio Imperial</h3>
+                            <p>A residência oficial da Família Imperial. Construído sobre as ruínas do lendário Castelo
+                                Edo, o local preserva muralhas e jardins que contam a história dos antigos xoguns.</p>
                         </div>
                     </div>
                 </div>
@@ -182,23 +194,23 @@
                     <div class="glass-card" data-id="tower">
                         <img src="images/tower-cover.jpg" alt="Tokyo Tower" class="card-img">
                         <div class="card-content">
-                            <h3>Meio-dia: Tokyo Tower</h3>
-                            <p>Parece a Torre Eiffel, mas é vermelha e branca! Vamos subir e ver a cidade lá do alto. 🗼
-                            </p>
+                            <h3>Torre de Tóquio</h3>
+                            <p>O eterno cartão-postal da cidade. Inspirada na Torre Eiffel, esta estrutura vermelha e
+                                branca de 333 metros simboliza o renascimento do Japão após a guerra.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item scroll-reveal delay-200">
-                    <div class="timeline-icon bg-blue">
+                    <div class="timeline-icon bg-green">
                         <span class="material-icons-round">directions_walk</span>
                     </div>
                     <div class="glass-card" data-id="shibuya">
                         <img src="images/shibuya-cover.jpg" alt="Shibuya Crossing" class="card-img">
                         <div class="card-content">
-                            <h3>Tarde: Shibuya Crossing</h3>
-                            <p>O cruzamento mais louco do mundo! 🚶‍♂️🚶‍♀️ Milhares de pessoas atravessam ao mesmo
-                                tempo. Vamos nos misturar na multidão!</p>
+                            <h3>Shibuya</h3>
+                            <p>Conhecido pela estátua do fiel cão Hachiko e pela intersecção de pedestres mais
+                                movimentada do planeta. Um cenário vibrante de neons, moda e tecnologia.</p>
                         </div>
                     </div>
                 </div>
@@ -210,22 +222,24 @@
                     <div class="glass-card" data-id="skytree">
                         <img src="images/skytree-cover.jpg" alt="Tokyo Skytree" class="card-img">
                         <div class="card-content">
-                            <h3>Fim de Tarde: Skytree</h3>
-                            <p>A torre mais alta do Japão tocando as nuvens! A vista do pôr do sol aqui será mágica. ☁️
-                            </p>
+                            <h3>Tokyo Skytree</h3>
+                            <p>A gigante de 634 metros. Além da vista espetacular do observatório, a base da torre conta
+                                com o "Dream Christmas", um evento natalino iluminado e mágico.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item scroll-reveal delay-200">
-                    <div class="timeline-icon bg-green">
+                    <div class="timeline-icon bg-gold">
                         <span class="material-icons-round">star</span>
                     </div>
                     <div class="glass-card" data-id="xmas">
-                        <img src="images/xmas-cover.jpg" alt="Iluminação de Natal" class="card-img">
+                        <img src="images/xmas-market-cover.jpg" alt="Natal na Skytree" class="card-img">
                         <div class="card-content">
-                            <h3>Jantar: Praça da Skytree</h3>
-                            <p>Um jantar especial sob as luzes brilhantes da cidade. ✨</p>
+                            <h3>Jantar Natalino</h3>
+                            <p>Jantar sob as luzes de 500 mil LEDs. A Praça Skytree se transforma em uma vila natalina,
+                                local perfeito para provar delícias de inverno como o famoso Stollen gigante, salsichas
+                                alemãs, churros e chocolate quente cremoso.</p>
                         </div>
                     </div>
                 </div>
@@ -249,26 +263,33 @@
                     <div class="timeline-icon bg-red">
                         <span class="material-icons-round">storefront</span>
                     </div>
-                    <div class="glass-card" data-id="chinatown">
-                        <img src="images/chinatown-cover.jpg" alt="Yokohama Chinatown" class="card-img">
+                    <div class="glass-card" data-id="yokohama">
+                        <img src="images/yokohama-cover.jpg" alt="Yokohama" class="card-img">
                         <div class="card-content">
-                            <h3>Manhã: Yokohama Chinatown</h3>
-                            <p>Cores, cheiros e sabores! A maior Chinatown do Japão é vibrante e cheia de coisas legais
-                                para ver. 🥟</p>
+                            <h3>Yokohama</h3>
+                            <p>O melhor de dois mundos. Exploraremos a moderna orla de Yokohama e mergulharemos nas
+                                cores e aromas da maior Chinatown do Japão, famosa por sua gastronomia e templos
+                                coloridos.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item scroll-reveal delay-100">
                     <div class="timeline-icon bg-blue">
-                        <span class="material-icons-round">flight_takeoff</span>
+                        <!-- Simple Profile Ferry SVG -->
+                        <svg class="material-icons-round" viewBox="0 0 24 24" fill="currentColor"
+                            style="width: 24px; height: 24px;">
+                            <path
+                                d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.64 2.62.99 4 .99h2v-2h-2zM4.05 19L5.94 12.32C6.02 12.06 6.04 11.78 6.16 11.54C6.28 11.29 6.54 11.14 6.8 11.14H17.2C17.46 11.14 17.72 11.29 17.84 11.54C17.96 11.78 17.98 12.06 18.06 12.32L19.95 19H4.05ZM17 9H7V6H17V9Z" />
+                        </svg>
                     </div>
                     <div class="glass-card" data-id="jica">
                         <img src="images/jica-cover.jpg" alt="Museu da Imigração" class="card-img">
                         <div class="card-content">
-                            <h3>Tarde: Museu da JICA</h3>
-                            <p>Um mergulho na história. Vamos entender como muitos brasileiros vieram para o Japão e
-                                vice-versa. 🇧🇷🇯🇵</p>
+                            <h3>Museu da Imigração</h3>
+                            <p>Uma viagem às raízes. Descobriremos a emocionante história dos corajosos japoneses que
+                                atravessaram o oceano para buscar uma nova vida nas Américas, com grande destaque para a
+                                imigração no Brasil.</p>
                         </div>
                     </div>
                 </div>
@@ -280,9 +301,9 @@
                     <div class="glass-card" data-id="retorno">
                         <img src="images/retorno-cover.jpg" alt="Volta para casa" class="card-img">
                         <div class="card-content">
-                            <h3>Retorno</h3>
-                            <p>Hora de voltar para Kikugawa com a mala cheia de lembranças e histórias para contar! 🚌💨
-                            </p>
+                            <h3>Retorno para Casa</h3>
+                            <p>Fim da nossa jornada. Retornamos para casa levando memórias de muita diversão e
+                                aprendizado, prontos para compartilhar as histórias incríveis que vivemos.</p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +316,7 @@
 
     <div class="fab-container">
         <button class="fab ripple" aria-label="Emergência e Mapa">
-            <span class="material-icons-round">support_agent</span>
+            <span class="material-icons-round">phone</span>
         </button>
     </div>
 
@@ -356,7 +377,10 @@
             <button class="close-btn" aria-label="Fechar">&times;</button>
             <div class="modal-content-scroll">
                 <div class="modal-header">
-                    <h2 style="color: #D32F2F;">🚨 Emergência</h2>
+                    <h2 style="color: #333; display: flex; align-items: center;">
+                        <span class="material-icons-round" style="color: #4CAF50; margin-right: 10px;">contacts</span>
+                        Contatos
+                    </h2>
                 </div>
                 <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
                     <p>Clique para ligar:</p>
