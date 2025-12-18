@@ -1,4 +1,4 @@
-const CACHE_NAME = 'excursao-toquio-v2';
+const CACHE_NAME = 'excursao-toquio-v1';
 const urlsToCache = [
   './',
   './index.html',
@@ -28,4 +28,3 @@ self.addEventListener('fetch', event => {
       })
   );
 });
-
